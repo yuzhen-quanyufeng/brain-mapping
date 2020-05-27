@@ -30,6 +30,7 @@ public class UsersServiceImpl implements UsersService {
 	}
 
 	@Override
+	@Transactional(propagation = Propagation.REQUIRES_NEW,rollbackFor = Exception.class,readOnly = false)
 	public Integer addUsers(Users users) {
 		Integer result = 0;
 		try {
@@ -41,6 +42,7 @@ public class UsersServiceImpl implements UsersService {
 	}
 
 	@Override
+	@Transactional(propagation = Propagation.REQUIRES_NEW,rollbackFor = Exception.class,readOnly = false)
 	public Integer delUsers(Integer id) {
 		Integer result = 0;
 		try {
@@ -52,6 +54,7 @@ public class UsersServiceImpl implements UsersService {
 	}
 
 	@Override
+	@Transactional(propagation = Propagation.REQUIRES_NEW,rollbackFor = Exception.class,readOnly = false)
 	public Integer updateUsers(Users users) {
 		Integer result = 0;
 		try {
