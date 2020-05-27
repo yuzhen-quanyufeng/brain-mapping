@@ -35,7 +35,8 @@
 			</bean>
 		</property>
 	</bean>    
-        
+      
+	<mvc:view-controller path="/add" view-name="add"/>
         <!-- 配置静态资源引用 -->
     <mvc:resources location="/statics/" mapping="/statics/**"/>
 
