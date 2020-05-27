@@ -50,10 +50,7 @@ public class UsersController {
 		return String.valueOf(usersService.delUsers(id));
 	}
 	
-	@RequestMapping(value = "/add")
-	public String add() {
-		return "add";
-	}
+	
 	
 	
 	
